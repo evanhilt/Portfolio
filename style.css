@@ -1,0 +1,209 @@
+/* Copyright (c) 2025 Evan Hilton */
+
+:root {
+    --primary-txt-color: #E6E3E1;
+    --primary-color: #323332;
+    --secondary-color: #4B4D4B;
+    --tertiary-color: #3E403E;
+}
+html {
+    scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6, p {
+    font-weight: normal;
+    text-align: left;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(15px);
+    animation: rise 1s ease-out forwards, fade 1s ease-out forwards;
+}
+.bar p {
+    opacity: 1;
+    transform: none;
+    animation: none;
+}
+a {
+    color: var(--primary-txt-color);
+    text-decoration: none;
+}
+body {
+    background-color: var(--primary-color);
+    color: var(--primary-txt-color);
+    font-family: "Courier New", monospace;
+    margin: 0;
+    line-height: 1.6;
+}
+header,
+footer {
+    top: 0;
+    width: 100%;
+    background: var(--secondary-color);
+    z-index: 10;
+    box-shadow: 15px 15px 30px black;
+}
+main {
+    width: 100%;
+}
+.header_content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 970px;
+    margin: 0 auto;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+.footer_content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 970px;
+    margin: 0 auto;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+.footer_item {
+    width: 400px;
+}
+.portfolio {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 30px 0 30px 0;
+    transform: translateY(15px);
+    animation: rise 1s ease-out forwards;
+    /* animation: rise 1s ease-out forwards, fade 1s ease-out forwards; */
+}
+.portfolio_piece_container {
+    box-shadow: 15px 15px 30px black;
+}
+.portfolio_piece {
+    display: block; 
+    border: none;
+}
+.portfolio_piece_hidden {
+    display: none;
+}
+img.portfolio_piece {
+    width: 100%; 
+    height: auto; 
+    cursor: pointer;
+}
+.bar {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    width: 100%;
+    padding: 0;
+    cursor: pointer;
+    align-items: center;
+    padding: 1rem 1rem 1rem 1rem;
+    color: var(--primary-txt-color);
+    line-height: 1;
+    background-color: var(--secondary-color);
+    margin:0px;
+}
+.bar_btn:hover h3,
+.bar_btn:hover p,
+a:hover {
+    text-decoration: underline;
+}
+.collapse_content {
+    display: block;
+    background-color: var(--tertiary-color);
+    color: var(--primary-txt-color);
+    position: relative;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.collapse_txt {
+    padding: 15px;
+}
+.collapse_btn_icon {
+    transform: rotate(-45deg);
+    transition: transform 0.2s ease-out;
+}
+.ad_btn_icon {
+    font-size: 1.17em; 
+    transform: rotate(45deg);
+}
+.ad_lrg {
+    width: 970px;
+}
+.ad_sml {
+    width: 300px;
+}
+/* > 1000px: Show desktop */
+@media (min-width: 1000px) {
+    .flyer,
+    .video {
+        /* margin: 0 20% 0 20%; */
+        width: 970px;
+    }
+    .ad_lrg {
+        display: block;
+    }
+    .ad_sml {
+        display: none;
+    }
+}
+/* < 500px: Show mobile and tablet */
+@media (max-width: 999px) {
+    .header_content,
+    .footer_content {
+        padding: 30px 1rem;
+        width: 100%;
+    }
+    .footer_content {
+        gap: 30px;
+        flex-direction: column;
+    }
+    .footer_item {
+        width: 100%;
+    }
+    .flyer,
+    .video {
+        margin: 0 1rem 0 1rem;
+    }
+    .ad_lrg {
+        display: none;
+    }
+    .ad_sml {
+        display: block;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes rise {
+    from {
+        transform: translateY(15px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes grow {
+    from {
+        transform: scale(.85);
+    } to {
+        transform: scale(1);
+    }
+}

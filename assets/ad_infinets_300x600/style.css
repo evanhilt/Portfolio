@@ -1,0 +1,276 @@
+/* HTML reset code */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/* classes */
+
+.layer-1 {
+    z-index: 1;
+}
+.layer-2 {
+    z-index: 2;
+}
+.layer-3 {
+    z-index: 3;
+}
+.layer-4 {
+    z-index: 4;
+}
+.ad {
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+}
+.ad h1 {
+    font-family: sans-serif; 
+    font-weight: bold;
+}
+.ad hr {
+    border: 1px solid white;
+    width: 80%;
+    margin: 10px auto;
+}
+.ad-element {
+    position: absolute;
+    width: 100%;
+}
+.parallelogram {
+    position: absolute;
+    top: -20px;
+    width: 300px;
+    transform: skewY(5deg);
+}
+.col1 {
+    animation: col1-morph 1.5s ease-in-out forwards;
+}
+.col2 {
+    animation: col2-morph 1.5s ease-in-out forwards;
+}
+.column-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sport-img {
+    margin-top: 300px;
+}
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shop-button-container {
+    width: 300px;
+    bottom: 0;
+}
+.net-polygon {
+    transform: translateX(200%);
+    transform: translateY(200%);
+}
+.sport-heading {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 60%;
+    left: -25px;
+    margin: 0;
+    font-size: 25px;
+    color: white;
+}
+.logo {
+    height: auto;
+    cursor: pointer;
+    animation: logo-grow .7s ease-in forwards, hover 2s 3 ease-in-out .7s;
+}
+.grow-text {
+    animation: text-grow .7s ease-in forwards, hover 2s 3 ease-in-out .7s;
+}
+
+/* ids */
+#logo-banner {
+    display: none;
+    height: 300px;
+    width: 300px;
+}
+#main-banner {
+    display: none;
+    width: 350px;
+    background-color: #00075A;
+}
+#temp-banner {
+    display: block;
+    width: 300px;
+    height: 600px;
+    background-color: #FFFFFF;
+}
+#shop-button {
+    cursor: pointer;
+    display: none;
+    margin-top: -30%;
+    width: 245px; 
+    height: 50px; 
+    background-color: #99FF66;
+    border-radius: 10px;
+    animation: button-grow .7s ease-in forwards, hover 2s 3 ease-in-out .7s;
+}
+#shop-button-text {
+    display: none;
+    opacity: 0;
+    color: black;
+    animation: text-fade .5s ease-in forwards;
+    animation-delay: .5s;
+}
+#infinets-heading {
+    display: none;
+    opacity: 0;
+    color: white;
+}
+#gaga-ball-heading {
+    animation: text-fade 1.5s ease-in-out 2 alternate forwards;
+    animation-delay: 1.5s;
+}
+#soccer-heading {
+    animation: text-fade 1.5s ease-in-out 2 alternate forwards;
+    animation-delay: 6.5s;
+}
+#pickleball-heading {
+    animation: text-fade 1.5s ease-in-out 2 alternate forwards;
+    animation-delay: 11.5s;
+}
+#tchoukball-heading {
+    animation: text-fade 1.5s ease-in-out 2 alternate forwards;
+    animation-delay: 16.5s;
+}
+#gaga-ball-img {
+    animation: img-pan 6s linear forwards;
+}
+#soccer-img {
+    animation: img-pan 5s linear forwards;
+    animation-delay: 6s;
+}
+#pickleball-img {
+    animation: img-pan 5s linear forwards;
+    animation-delay: 11s;
+}
+#tchoukball-img {
+    animation: img-pan 5s linear forwards;
+    animation-delay: 16s;
+}
+
+/* animations */
+
+@keyframes col1-morph {
+    0% {
+        height: 0px;
+        top: -20px;
+    }
+    50% {
+        height: 1200px;
+        top: -20px;
+    }
+    75% {
+        height: 1200px;
+        top: -20px;
+    }
+    100% {
+        height: 100px;
+        top: 250px;
+    }
+}
+@keyframes col2-morph {
+    0% {
+        height: 0px;
+        top: -20px;
+    }
+    25% {
+        height: 0px;
+        top: -20px;
+    }
+    75% {
+        height: 600px;
+        top: -20px;
+    }
+    100% {
+        height: 50px;
+        top: 250px;
+    }
+}
+@keyframes logo-grow {
+    from {
+        width: 5px;
+    }
+    to {
+        width: 245px;
+    }
+}
+@keyframes text-grow {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes button-grow {
+    from {
+        width: 0px;
+        height: 0px;
+    }
+    to {
+        width: 245px;
+        height: 50px;
+    }
+}
+@keyframes hover {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, -10px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes text-fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes img-pan {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(35px);
+    }
+}

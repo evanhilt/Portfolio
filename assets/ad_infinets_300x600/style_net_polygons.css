@@ -1,0 +1,190 @@
+/* ids */
+/* gaga ball */
+#gaga_ball_back_left {
+    animation: left-angle-slight-down 2s ease-in-out 2 alternate forwards;
+}
+#gaga_ball_back {
+    animation: bottom-angle-up 2s ease-in-out 2 alternate forwards;
+    animation-delay: .2s;
+}
+#gaga_ball_back_right {
+    animation: right-angle-down 2s ease-in-out 2 alternate forwards;
+    animation-delay: .4s;
+}
+#gaga_ball_front_right {
+    animation: right-angle-slight-up 2s ease-in-out 2 alternate forwards;
+    animation-delay: .6s;
+}
+#gaga_ball_front {
+    animation: top-angle-down 2s ease-in-out 2 alternate forwards;
+    animation-delay: .8s;
+}
+#gaga_ball_front_left {
+    animation: left-angle-up 2s ease-in-out 2 alternate forwards;
+    animation-delay: 1s;
+}
+/* soccer */
+#soccer_back_bottom {
+    animation: left-angle-down 2s ease-in-out 2 alternate forwards;
+    animation-delay: 5s;
+}
+#soccer_back_top {
+    animation: left-angle-down 2s ease-in-out 2 alternate forwards;
+    animation-delay: 5.25s;
+}
+#soccer_left {
+    animation: left-angle-up 2s ease-in-out 2 alternate forwards;
+    animation-delay: 5.5s;
+}
+#soccer_top {
+    animation: top-down 2s ease-in-out 2 alternate forwards;
+    animation-delay: 5.75s;
+}
+#soccer_right {
+    animation: right-angle-down 2s ease-in-out 2 alternate forwards;
+    animation-delay: 6s;
+}
+/* pickleball */
+#pickleball_left {
+    animation: left-angle-down 2s ease-in-out 2 alternate forwards;
+    animation-delay: 10s;
+}
+#pickleball_left_middle {
+    animation: left-angle-down 2s ease-in-out 2 alternate forwards;
+    animation-delay: 10.3333s;
+}
+#pickleball_right_middle {
+    animation: left-angle-down 2s ease-in-out 2 alternate forwards;
+    animation-delay: 10.6666s;
+}
+#pickleball_right {
+    animation: left-angle-down 2s ease-in-out 2 alternate forwards;
+    animation-delay: 11s;
+}
+/* tchoukball */
+#tchoukball_back {
+    animation: left-angle-down 2s ease-in-out 2 alternate forwards;
+    animation-delay: 15s;
+}
+#tchoukball_bottom {
+    animation: bottom-up 2s ease-in-out 2 alternate forwards;
+    animation-delay: 15.5s;
+}
+#tchoukball_front {
+    animation: right-angle-down 2s ease-in-out 2 alternate forwards;
+    animation-delay: 16s;
+}
+
+/* animations */
+
+@keyframes top-down {
+    0% {
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+@keyframes bottom-up {
+    0% {
+        transform: translateY(100%);
+    }
+    50% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+@keyframes left-angle-up {
+    0% {
+        transform: translate(-100%, 50%);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes left-angle-down {
+    0% {
+        transform: translate(-100%, -50%) ;
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes right-angle-up {
+    0% {
+        transform: translate(100%, -50%) ;
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes right-angle-down {
+    0% {
+        transform: translate(100%, -50%) ;
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+/* gaga ball */
+@keyframes top-angle-down {
+    0% {
+        transform: translate(61.2%, 100%);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes bottom-angle-up {
+    0% {
+        transform: translate(-61.2%, -100%);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes left-angle-slight-down {
+    0% {
+        transform: translate(-100%, -7.4%);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes right-angle-slight-up {
+    0% {
+        transform: translate(100%, 7.4%);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}

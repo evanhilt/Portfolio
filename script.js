@@ -64,11 +64,3 @@ for (let i=0; i<portfolio_piece_imgs.length; i++) {
         }
     });
 }
-
-// window.addEventListener("resize", function() {
-//     console.log("resize");
-//     const iframes = document.querySelectorAll("iframe");
-//     iframes.forEach((iframe) => {
-//         iframe.contentWindow.location.reload();
-//     });
-// });

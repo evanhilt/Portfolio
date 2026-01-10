@@ -27,6 +27,7 @@ a {
     text-decoration: none;
 }
 body {
+    overscroll-behavior: none;
     background-color: var(--primary-color);
     color: var(--primary-txt-color);
     font-family: "Courier New", monospace;

@@ -7,7 +7,7 @@
     --tertiary-color: #3E403E;
 }
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: none;
 }
 h1, h2, h3, h4, h5, h6, p {
     font-weight: normal;

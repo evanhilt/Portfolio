@@ -76,8 +76,8 @@ main {
     gap: 30px;
     width: 100%;
     padding: 30px 0 30px 0;
-    transform: translateY(15px);
-    animation: rise 1s ease-out forwards;
+    /* transform: translateY(15px); */
+    /* animation: rise 1s ease-out forwards; */
     /* animation: rise 1s ease-out forwards, fade 1s ease-out forwards; */
 }
 .portfolio_piece_container {

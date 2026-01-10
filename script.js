@@ -65,9 +65,9 @@ for (let i=0; i<portfolio_piece_imgs.length; i++) {
     });
 }
 
-window.addEventListener("resize", function() {
-    const iframes = document.querySelectorAll("iframe");
-    iframes.forEach((iframe) => {
-        iframe.contentWindow.location.reload();
-    });
-});
+// window.addEventListener("resize", function() {
+//     const iframes = document.querySelectorAll("iframe");
+//     iframes.forEach((iframe) => {
+//         iframe.contentWindow.location.reload();
+//     });
+// });

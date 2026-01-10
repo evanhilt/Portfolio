@@ -1,4 +1,4 @@
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', function() {
 
     setTimeout( function() {
         document.getElementById("main-banner").style.display = "block";
@@ -20,4 +20,4 @@ window.onload = function() {
         document.getElementById("shop-button").style.display = "flex";
         document.getElementById("shop-button-text").style.display = "block";
     }, 21000);
-}
+});

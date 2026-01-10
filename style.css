@@ -86,6 +86,8 @@ main {
 .portfolio_piece {
     display: block; 
     border: none;
+    position: sticky;
+    top: 0;
 }
 .portfolio_piece_hidden {
     display: none;

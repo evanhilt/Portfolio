@@ -1,0 +1,254 @@
+/* HTML reset code */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/* classes */
+
+.layer-1 {
+    z-index: 1;
+}
+.layer-2 {
+    z-index: 2;
+}
+.layer-3 {
+    z-index: 3;
+}
+.layer-4 {
+    z-index: 4;
+}
+.ad {
+    position: absolute;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    width: 970px;
+    height: 250px;
+}
+.ad-element {
+    position: absolute;
+    height: 100%;
+}
+.ad h1 {
+    font-family: sans-serif; 
+    font-weight: bold;
+}
+.ad hr {
+    border: 1px solid white;
+    width: 80%;
+    margin: 10px auto;
+}
+.shop-button-container {
+    width: 300px;
+    height: 85px;
+    top: 0;
+    right: 0;
+}
+.parallelogram {
+    position: absolute;
+    width: 50px;
+    transform: skew(-15deg);
+}
+.col1 {
+    animation: col1-morph 1.5s ease-in-out forwards;
+}
+.col2 {
+    animation: col2-morph 1.5s ease-in-out forwards;
+}
+.column-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 300px;
+}
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.large-text {
+    font-size: 42px;
+}
+.heading-text {
+    text-align: center;
+    color: white;
+}
+.play-heading {
+    width: 250px;
+    font-size: 36px;
+    opacity: 0;
+    animation: text-fade 1.5s ease-in-out 2 alternate forwards;
+    position: absolute;
+}
+.logo {
+    height: auto;
+    cursor: pointer;
+    animation: logo-grow .7s ease-in forwards, hover 2s 6 ease-in-out .7s;
+}
+.grow-text {
+    animation: text-grow .7s ease-in forwards, hover 2s 6 ease-in-out .7s;
+}
+
+/* ids */
+#temp-banner {
+    display: block;
+    width: 970px;
+    background-color: #FFFFFF;
+}
+#main-banner {
+    display: none;
+    width: 355px;
+    background-color: #00075A;
+}
+#logo-section {
+    display: none;
+    height: 100%;
+    width: 300px;
+}
+#play-heading-1 {
+    animation-delay: 2s;
+}
+#play-heading-2 {
+    animation-delay: 5s;
+}
+#play-heading-3 {
+    animation-delay: 8s;
+}
+#svg-container {
+    display: none;
+}
+#shop-button {
+    cursor: pointer;
+    display: none;
+    width: 245px; 
+    height: 50px; 
+    background-color: #99FF66;
+    border-radius: 10px;
+    animation: button-grow .7s ease-in forwards, hover 2s 6 ease-in-out .7s;
+}
+#shop-button-text {
+    display: none;
+    opacity: 0;
+    color: black;
+    animation: text-fade .5s ease-in forwards;
+    animation-delay: .5s;
+}
+#castle-squares-9-square-img {
+    display: none;
+    transform: translateX(225px);
+    animation: img-pan 1s linear forwards;
+}
+
+/* animations */
+
+@keyframes col1-morph {
+    0% {
+        width: 0px;
+        left: -50px;
+    }
+    50% {
+        width: 1200px;
+        left: -50px;
+    }
+    75% {
+        width: 1200px;
+        left: -50px;
+    }
+    100% {
+        width: 50px;
+        left: 350px;
+    }
+}
+@keyframes col2-morph {
+    0% {
+        width: 0px;
+        left: -50px;
+    }
+    25% {
+        width: 0px;
+        left: -50px;
+    }
+    75% {
+        width: 600px;
+        left: -50px;
+    }
+    100% {
+        width: 50px;
+        left: 300px;
+    }
+}
+@keyframes img-pan {
+    0% {
+        transform: translateX(225px);
+    }
+    100% {
+        transform: translateX(325px);
+    }
+}
+@keyframes logo-grow {
+    from {
+        width: 5px;
+    }
+    to {
+        width: 245px;
+    }
+}
+@keyframes text-grow {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes button-grow {
+    from {
+        width: 0px;
+        height: 0px;
+    }
+    to {
+        width: 245px;
+        height: 50px;
+    }
+}
+@keyframes hover {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, -10px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes text-fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
